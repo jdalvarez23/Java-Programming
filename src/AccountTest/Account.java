@@ -41,7 +41,7 @@ public class Account {
     
     // method that withdraws (removes) only a valid amount from the balance
     public void withdraw(double withdrawAmount) {
-        if (withdrawAmount < this.balance) { // if the withdrawAmount is valid
+        if (withdrawAmount <= this.balance) { // if the withdrawAmount is valid
             balance = balance - withdrawAmount; // remove it from the balance
         } else {
             System.out.printf("Withdrawal amount exceeded account balance.%n%n");
