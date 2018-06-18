@@ -17,7 +17,7 @@ public class Ch2Exercise8 {
         // create a Scanner to obtain input from the command window
         Scanner input = new Scanner(System.in);
         
-        System.out.print("Enter an integer: "); // prompt
+        //System.out.print("Enter an integer: "); // prompt
         int a; // declare integer variable a
         int b = 5; // declare integer variable b
         int c = 7; // declare integer variable c

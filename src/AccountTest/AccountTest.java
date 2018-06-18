@@ -5,7 +5,7 @@
  */
 package AccountTest;
 
-import java.util.Scanner;
+import java.util.Scanner; // progam uses class Scanner
 
 /**
  *
@@ -16,6 +16,7 @@ import java.util.Scanner;
 // Inputting and outputting floating-point numbers with Account objects.
 
 public class AccountTest {
+    // main method begins execution of Java application
     public static void main(String[] args) {
         Account account1 = new Account("Jane Green", 50.00);
         Account account2 = new Account("John Blue", -7.53);
@@ -49,11 +50,6 @@ public class AccountTest {
         double withdrawAmount = input.nextDouble(); // obtain user input
         System.out.printf("%nwithdrawing %.2f from account1 balance...%n%n", withdrawAmount);
         account1.withdraw(withdrawAmount); // add to account1's balance   
-        
-//        if (withdrawAmount > account1.getBalance()) { // if the withdraw 
-//            System.out.printf("%nwithdrawing %.2f from account1 balance%n%n", withdrawAmount);
-//            account1.withdraw(withdrawAmount); // add to account1's balance   
-//        }
         
         // display balances
         System.out.printf("%s balance: %.2f%n", account1.getName(), account1.getBalance());
