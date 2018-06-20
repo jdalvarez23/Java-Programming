@@ -23,7 +23,7 @@ public class Employee {
         this.lastName = lastName; // assign  last name to instance variable lastName
         
         // validate that the monthly salary is greater than 0; if it's not,
-        // instance variable monthlySalary keepts its default initial value of 0
+        // instance variable monthlySalary keeps its default initial value of 0
         if (monthlySalary > 0) { // if the monthly salary is valid
             this.monthlySalary = monthlySalary; // assign it to instance variable monthlySalary
         }

@@ -24,13 +24,13 @@ public class Invoice {
         this.description = description; // assign  description to instance variable description
         
         // validate that the quantity is greater than 0; if it's not,
-        // instance variable quantity keepts its default initial value of 0
+        // instance variable quantity keeps its default initial value of 0
         if (quantity > 0) { // if the quantity is valid
             this.quantity = quantity; // assign it to instance variable quantity
         }
         
         // validate that the price is greater than 0.0; if it's not,
-        // instance variable price keepts its default initial value of 0.0
+        // instance variable price keeps its default initial value of 0.0
         if (price > 0.0) { // if the quantity is valid
             this.price = price; // assign it to instance variable price
         }
