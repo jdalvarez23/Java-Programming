@@ -12,7 +12,7 @@ import java.util.Scanner;
  * @author jalvarez343
  */
 
-// Exercise 4.19
+// Exercise 4.18
 
 public class Ch4Exercise18 {
      // main method begins execution of Java application
