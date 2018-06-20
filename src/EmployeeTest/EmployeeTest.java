@@ -35,7 +35,7 @@ public class EmployeeTest {
         System.out.print("Enter new percent (%) increase in salary for employee 1: "); // prompt
         double percentSalary = input.nextDouble(); // obtain user input
         
-        if (percentSalary >= 0) { // is new salary is valid
+        if (percentSalary >= 0) { // if new salary is valid
             double increaseSalary = employee1.getMonthlySalary() * (percentSalary / 100); // calculate the increase in salary for employee1
             double newSalary = employee1.getMonthlySalary() + increaseSalary; // calculate the new salary by adding increase to current salary
             employee1.setMonthlySalary(newSalary); // set new employee monthly salary 
@@ -45,7 +45,7 @@ public class EmployeeTest {
         System.out.print("Enter new percent (%) increase in salary for employee 2: "); // prompt
         percentSalary = input.nextDouble(); // obtain user input
         
-        if (percentSalary >= 0) { // is new salary is valid
+        if (percentSalary >= 0) { // if new salary is valid
             double increaseSalary = employee2.getMonthlySalary() * (percentSalary / 100); // calculate the increase in salary for employee2
             double newSalary = employee2.getMonthlySalary() + increaseSalary; // calculate the new salary by adding increase to current salary
             employee2.setMonthlySalary(newSalary); // set new employee monthly salary 
