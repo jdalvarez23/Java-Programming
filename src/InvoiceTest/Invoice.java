@@ -18,7 +18,7 @@ public class Invoice {
     private int quantity; // instance variable
     private double price; // instance variable
     
-    // Account constructor that receives two parameters
+    // Invoice constructor that receives four parameters
     public Invoice(String number, String description, int quantity, double price) {
         this.number = number; // assign part number to instance variable number
         this.description = description; // assign  description to instance variable description
