@@ -53,6 +53,7 @@ public class Ch4Exercise20 {
             System.out.printf("%nExtracting data for employee #%d...%n", employeeCounter);
             System.out.printf("-------------------------------------%n");
             System.out.printf("Hours worked: %d%n", hoursWorked);
+            System.out.printf("Excess hours worked (overtime): %d%n", hoursWorked - 40);
             System.out.printf("Hourly rate: $%.2f%n", hourlyRate);
             System.out.printf("Excess hourly rate (overtime rate): $%.2f%n", excessHourlyRate);
             System.out.printf("------------------------------------%n");
@@ -73,7 +74,7 @@ public class Ch4Exercise20 {
             System.out.printf("%nTerminating process...%n");
             System.out.printf("-------------------------------------%n");
         } else { // if no items were inserted
-            System.out.println("No employee information entered.");
+            System.out.println("No employee data entered.");
         }
         
     }
