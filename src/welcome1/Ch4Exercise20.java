@@ -15,7 +15,7 @@ import java.util.Scanner;
 // Exercise 4.20
 
 public class Ch4Exercise20 {
-      // main method begins execution of Java application
+    // main method begins execution of Java application
     public static void main(String[] args) {
         // create a Scanner object to obtain input from the command window
         Scanner input = new Scanner(System.in);

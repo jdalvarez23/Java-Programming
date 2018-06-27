@@ -15,17 +15,17 @@ import java.util.Scanner;
 // Exercise 4.18
 
 public class Ch4Exercise18 {
-     // main method begins execution of Java application
+    // main method begins execution of Java application
     public static void main(String[] args) {
         // create a Scanner object to obtain input from the command window
         Scanner input = new Scanner(System.in);
         
         // initialization phase
-        int accountNumber; // instance variable
-        int beginnerBalance; // instance variable
-        int totalItemsCharged; // instance variable
-        int totalCreditsApplied; // instance variable
-        int allowedCredit; // instance variable
+        int accountNumber; // initialize account number
+        int beginnerBalance; // initialize initial balance
+        int totalItemsCharged; // initialize total items charged to account
+        int totalCreditsApplied; // initialize total credits applied to account
+        int allowedCredit; // initialize allowed credit on account
         
         // processing phase
         System.out.printf("%nThis program determines whether any of several department-store customers has exceeded their credit limit.%n%n");
