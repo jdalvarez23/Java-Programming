@@ -24,7 +24,7 @@ public class Ch4Exercise21 {
         int numberCounter = 0; // initialize number inserted counter
         int number; // initialize number inserted by user
         int largest = 0; // initialize largest number inserted by user
-        int limit = 10;
+        int limit = 10; // initialize counter limit
         
         // processing phase
         System.out.print("Enter first integer: "); // prompt for input
