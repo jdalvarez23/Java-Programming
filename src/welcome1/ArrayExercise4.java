@@ -12,9 +12,9 @@ import java.util.Scanner;
  * @author jalvarez343
  */
 
-// Array Exercise #3
+// Array Exercises 2 #1
 
-public class ArrayExercise3 {
+public class ArrayExercise4 {
     // main method begins execution of Java application
     public static void main(String[] args) {
         // create a Scanner object to obtain input from the command window
@@ -41,29 +41,26 @@ public class ArrayExercise3 {
         // display information
         System.out.printf("%nTerminating process...%n");
         System.out.printf("-------------------------------------%n");
-        System.out.printf("Index of smallest number: %d%n", indexOfSmallestElement(array));
-        System.out.printf("Value of smallest umber: %f%n", array[indexOfSmallestElement(array)]);
+        System.out.printf("Value of minimum number: %f%n", min(array));
     }
     
-    // method that returns average of double type array
-    public static int indexOfSmallestElement(double[] array) {
+    // method that returns minimum value of double type array
+    public static double min(double[] array) {
         // execute if array length is less than or equal to one
         if (array.length <= 1) {
             return 0; // return zero
         // execute if array length is greater than one
         } else {
-            int smallestIndex = 0; // initialize index of smallest value in array variable
-            double smallestValue = array[smallestIndex]; // initialize smallest value in array variable and set value to first array value
+            double smallestValue = array[0]; // initialize smallest value in array variable and set value to first array value        
         
             // loop through double type array
             for (int i = 0; i < array.length; i++) {
                 if (array[i] < smallestValue) { // if array value is smaller than smallestValue variable
                     smallestValue = array[i]; // set smallestValue to array value
-                    smallestIndex = i; // set smallestIndex to array value index
                 }
             }
         
-            return smallestIndex; // returns average integer to main method
+            return smallestValue; // returns smallest double to main method
         }
     }
     

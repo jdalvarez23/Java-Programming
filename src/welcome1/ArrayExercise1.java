@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author wrl123u
+ * @author jalvarez343
  */
 
 // Array Exercise #1

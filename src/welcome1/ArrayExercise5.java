@@ -12,9 +12,9 @@ import java.util.Scanner;
  * @author jalvarez343
  */
 
-// Array Exercise #3
+// Array Exercises 2 #2
 
-public class ArrayExercise3 {
+public class ArrayExercise5 {
     // main method begins execution of Java application
     public static void main(String[] args) {
         // create a Scanner object to obtain input from the command window
@@ -37,33 +37,37 @@ public class ArrayExercise3 {
             numberCounter++; // increment counter
         }
         
+        double[] reverseArray = reverse(array); // calling method that returns array reversed
+        
         // termination phase
         // display information
         System.out.printf("%nTerminating process...%n");
         System.out.printf("-------------------------------------%n");
-        System.out.printf("Index of smallest number: %d%n", indexOfSmallestElement(array));
-        System.out.printf("Value of smallest umber: %f%n", array[indexOfSmallestElement(array)]);
+        
+        // loop through double type array
+        for (int i = 0; i < reverseArray.length; i++) {
+            System.out.printf("%n%f", reverseArray[i]); // print line with number
+        }
+        System.out.println(); // print empty line
     }
     
-    // method that returns average of double type array
-    public static int indexOfSmallestElement(double[] array) {
+    // method that returns reversed array
+    public static double[] reverse(double[] array) {
         // execute if array length is less than or equal to one
         if (array.length <= 1) {
-            return 0; // return zero
+            return null; // return null
         // execute if array length is greater than one
         } else {
-            int smallestIndex = 0; // initialize index of smallest value in array variable
-            double smallestValue = array[smallestIndex]; // initialize smallest value in array variable and set value to first array value
+            int lastIndex = array.length - 1; // initialize last index variable and set value to last array value        
         
+            double[] reverse = new double[array.length]; // initialize and declare double type array variable with array object
+            
             // loop through double type array
-            for (int i = 0; i < array.length; i++) {
-                if (array[i] < smallestValue) { // if array value is smaller than smallestValue variable
-                    smallestValue = array[i]; // set smallestValue to array value
-                    smallestIndex = i; // set smallestIndex to array value index
-                }
+            for (int i = 0; i < reverse.length; i++) {
+                reverse[i] = array[lastIndex--]; // set reverse array values from desc order in array
             }
         
-            return smallestIndex; // returns average integer to main method
+            return reverse; // returns new reversed array to main method
         }
     }
     
